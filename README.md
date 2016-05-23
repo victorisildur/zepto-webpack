@@ -1,18 +1,32 @@
-# Install
-Since webpack ProvicePlugin can only be used when $ is directly derived from a module,
+# zepto
+> Since webpack ProvicePlugin can only be used when $ is directly derived from a module,
 current modules can't be used conviently in webpack since their exports.$ is what we got.
 
-To install, only type:
+Current version of Zepto: ```1.1.6```
 
-```npm install npm-webpack```
+Version of this repo: ```1.1.6_0```
+
+Official releases: [github.com/madrobby/zepto/releases](https://github.com/madrobby/zepto/releases)
+
+# Install
+
+```npm install zepto-webpack```
 
 # Usage
 
 ```javascript
 plugins: [
     new webpack.ProvidePlugin({
-        $: 'npm-webpack'
+        $: 'zepto-webpack'
     })
 ]
+```
+
+# Changes from Zepto
+
+at line 887 I add:
+
+```javascript
+module.exports = window.Zepto;
 ```
 

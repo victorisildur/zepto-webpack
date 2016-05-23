@@ -1,0 +1,23 @@
+{
+  "name": "zepto-webpack",
+  "version": "1.0.0",
+  "description": "zepto webpack version",
+  "main": "zepto.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorisildur/zepto-webpack.git"
+  },
+  "keywords": [
+    "zepto",
+    "webpack"
+  ],
+  "author": "victorisildur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victorisildur/zepto-webpack/issues"
+  },
+  "homepage": "https://github.com/victorisildur/zepto-webpack#readme"
+}

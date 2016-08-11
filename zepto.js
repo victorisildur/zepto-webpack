@@ -1394,6 +1394,8 @@ module.exports = Zepto;
 
     if (settings.headers) for (name in settings.headers) setHeader(name, settings.headers[name])
     xhr.setRequestHeader = setHeader
+    var async = 'async' in settings ? settings.async : true
+    xhr.open(settings.type, settings.url, async, settings.username, settings.password)
 
     xhr.onreadystatechange = function(){
       if (xhr.readyState == 4) {
@@ -1427,8 +1429,6 @@ module.exports = Zepto;
 
     if (settings.xhrFields) for (name in settings.xhrFields) xhr[name] = settings.xhrFields[name]
 
-    var async = 'async' in settings ? settings.async : true
-    xhr.open(settings.type, settings.url, async, settings.username, settings.password)
 
     for (name in headers) nativeSetHeader.apply(xhr, headers[name])
 

@@ -4,7 +4,7 @@ current modules can't be used conviently in webpack since their exports.$ is wha
 
 Current version of Zepto: ```1.1.6```
 
-Version of this repo: ```1.1.6_0```
+Version of this repo: ```1.1.7```
 
 Official releases: [github.com/madrobby/zepto/releases](https://github.com/madrobby/zepto/releases)
 
@@ -30,3 +30,4 @@ at line 887 I add:
 module.exports = window.Zepto;
 ```
 
+solve ajax issue in [issue921](https://github.com/madrobby/zepto/issues/921)

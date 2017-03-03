@@ -4,7 +4,7 @@
     define(function() { return factory(global) })
   else
     factory(global)
-}(this, function(window) {
+}(this, function() {
   var Zepto = (function() {
   var undefined, key, $, classList, emptyArray = [], concat = emptyArray.concat, filter = emptyArray.filter, slice = emptyArray.slice,
     document = window.document,

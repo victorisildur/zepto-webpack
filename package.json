@@ -1,6 +1,6 @@
 {
   "name": "zepto-webpack",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "zepto webpack version",
   "main": "zepto.js",
   "scripts": {
